@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
     printf ("RECEIVED:\n%s", buf);
     convert_string (buf);
     send (session_sockfd, buf, sizeof(buf), 0);
-    printf ("SENDING:\n%s", buf);
+    printf ("SENDING:\n%s\n", buf);
   }
 
   close (session_sockfd);

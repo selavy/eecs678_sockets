@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     printf ("SENDING:\n%s", strs[i]);
     send (sockfd, strs[i], strlen (strs[i]) + 1, 0);
     recv (sockfd, buf, BSIZE, 0);
-    printf ("RECEIVED:\n%s", buf);
+    printf ("RECEIVED:\n%s\n", buf);
   }
 
   close(sockfd);
